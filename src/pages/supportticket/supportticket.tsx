@@ -65,7 +65,7 @@ function SupportTicket() {
 
       try {
         const response = await fetch(
-          "http://165.232.180.63:4000/api/support-tickets",
+          "https://165.232.180.63/api/support-tickets",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

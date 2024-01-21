@@ -11,7 +11,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://165.232.180.63:4000/api/support-agents",
+          "https://165.232.180.63/api/support-agents",
           {
             method: "GET",
             headers: { "Content-Type": "application/json" },

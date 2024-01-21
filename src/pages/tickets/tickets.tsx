@@ -48,7 +48,7 @@ function Tickets() {
     const urlQuery = new URLSearchParams(query).toString();
     try {
       const response = await fetch(
-        "http://165.232.180.63:4000/api/support-tickets?" + urlQuery,
+        "https://165.232.180.63/api/support-tickets?" + urlQuery,
         {
           method: "GET",
           headers: { "Content-Type": "application/json" },
@@ -63,7 +63,7 @@ function Tickets() {
 
   async function fetchTickets() {
     const response = await fetch(
-      `http://165.232.180.63:4000/api/support-tickets?sort=${sort}&page=${page}&pageSize=${pageSize}`,
+      `https://165.232.180.63/api/support-tickets?sort=${sort}&page=${page}&pageSize=${pageSize}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -81,7 +81,7 @@ function Tickets() {
     return async () => {
       try {
         const response = await fetch(
-          `http://165.232.180.63:4000/api/support-tickets/${_id}`,
+          `https://165.232.180.63/api/support-tickets/${_id}`,
           {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
@@ -106,7 +106,7 @@ function Tickets() {
     return async () => {
       try {
         const response = await fetch(
-          `http://165.232.180.63:4000/api/support-tickets/${id}/resolve`,
+          `https://165.232.180.63/api/support-tickets/${id}/resolve`,
           {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
