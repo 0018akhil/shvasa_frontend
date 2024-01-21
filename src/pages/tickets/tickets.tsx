@@ -17,7 +17,7 @@ function Tickets() {
   });
   const [sort, setSort] = useState("createdAt"); // default sort
   const [page, setPage] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
+  const [pageSize] = useState(10);
 
   const updateFilters = (fieldName: string, value: any) => {
     setFilters((prevFilters) => ({
